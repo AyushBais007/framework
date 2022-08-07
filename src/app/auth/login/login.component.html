@@ -1,0 +1,111 @@
+<!-- <body>
+  <header>
+    <h1>super admin</h1>
+  </header>
+  <main class="col-sm-8">
+    <form id="login_form" class="form_class" [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="form_div">
+        <mat-form-field class="form__input" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Password" type="password" formControlName="password">
+          <mat-error *ngIf="isValidInput('password')">
+            <mat-error *ngIf="loginForm.controls['password'].errors!.required">
+              Password is <strong>required</strong>.
+            </mat-error>
+          </mat-error>
+        </mat-form-field>
+
+        
+        <div class="form__input card p-2 mb-4">
+          <div class="row">
+            <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 p-2">
+              <a href="javascript:void(0);" (click)="svgcaptcha()">
+                <mat-icon>refresh</mat-icon>
+              </a>
+            </div>
+            <div class="col-md-6 col-sm-8 col-lg-8 col-xl-8 pl-4">
+              <span #captchaDataContainer></span>
+            </div>
+          </div><br>
+          <div>
+            <mat-form-field class="form__input" appearance="outline">
+              <mat-label>Captcha</mat-label>
+              <input matInput formControlName="txtcaptcha" autocomplete="off" type="text" maxlength="4"
+                placeholder="Captcha" />
+              <mat-error *ngIf="isValidInput('txtcaptcha')">
+                <mat-error *ngIf="loginForm.controls['txtcaptcha'].errors!.required">
+                  Captcha is <strong>required!</strong>.
+                </mat-error>
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button class="submit_class" mat-raised-button color="primary" type="submit"
+          [disabled]="loginForm.invalid">Login</button>
+      </div>
+    </form>
+  </main>
+  
+    <div class="footer">
+      <div class="footer_footer_para">
+        <p>
+          <strong>Disclaimer</strong><br/>
+          © 2022-{{todayDate | date: 'y'}} | <a href="http://www.cghealth.nic.in" target="_blank">Health & Family Welfare & Medical Education, Govt. of Chhattisgarh</a>
+          <br/>Designed, Developed And Hosted By <a href="https://chhattisgarh.nic.in/"> National Informatics Centre, Chhattisgarh.</a>
+        </p>
+      </div>  
+      
+    </div>  
+</body>
+ -->
+
+ <div class="form_wrapper">
+    <!-- <a >
+      <i class="material-icon">refresh</i>
+    </a> -->
+  
+    <div class="form">
+      <i class="fa fa-light fa-circle-i"></i>
+      <mat-icon class="icon">account_circle</mat-icon>
+      <h2>Login</h2>
+      <form>
+        <div class="input">
+          <div class="inputBox">
+            <div class="inputBox">
+              <label for="">Password</label>
+              <input matInput type="password">
+              <!-- <mat-error *ngIf="isValidInput('password')">
+                <mat-error *ngIf="loginForm.controls['password'].errors!.required">
+                  Password is <strong>required</strong>.
+                </mat-error> 
+              </mat-error>-->
+            </div>
+
+            <!-- captcha box -->
+            <!-- <div class="captchaBox">
+              <span class="material-icons" (click)="svgcaptcha()">
+                autorenew
+              </span>
+              <span #captchaDataContainer class="captcha"></span>
+            </div> 
+            <div class="inputBox">
+              <label for="">Captch</label>
+              <input type="text" formControlName="txtcaptcha">
+              <mat-error *ngIf="isValidInput('txtcaptcha')">
+                <mat-error *ngIf="loginForm.controls['txtcaptcha'].errors!.required">
+                  Captcha is <strong>required!</strong>.
+                </mat-error>
+              </mat-error>
+            </div>-->
+            <div class="inputBox">
+              <input type="submit" value="Sign In" (click)="login()">
+            </div>
+          </div>
+          <!-- <p class="forgot">Forgot Password? <a href="#">Click Here</a></p> -->
+        </div>
+      </form>
+    </div>
+  </div>
+  

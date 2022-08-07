@@ -1,0 +1,170 @@
+{
+    "1": [
+      {
+        "label": "Dashboard",
+        "route": "/sadmin/dashboard",
+        "icon": "dashboard",
+        "child": []
+      },
+      {
+        "label": "Hrp Reason",
+        "route": "/sadmin/hrpreason",
+        "icon": "update",
+        "child": []
+      },
+      {
+        "label": "Height",
+        "route": "/sadmin/height",
+        "icon": "update",
+        "child": []
+      },
+      {
+        "label": "Role",
+        "route": "/sadmin/role",
+        "icon": "update",
+        "child": []
+      },
+      {
+        "label":"Users",
+        "route":"/sadmin/users",
+        "icon":"update",
+        "child":[]
+      },
+      {
+        "label":"Delivery Type",
+        "route":"/sadmin/deliveryType",
+        "icon":"update",
+        "child":[]
+      },
+      {
+        "label":"Outcome",
+        "route":"/sadmin/outcome",
+        "icon":"update",
+        "child":[]
+      },
+      {
+        "label":"PNC Visit Type",
+        "route":"/sadmin/visitTypePnc",
+        "icon":"update",
+        "child":[]
+      }
+        
+    ],
+    "2": [
+      {
+        "label": "Home",
+        "route": "/state/home",
+        "icon": "home",
+        "child": []
+      },
+      {
+        "label": "CHC Wise Report",
+        "route": "/state/chc-wise-report",
+        "icon": "list",
+        "child": []
+      }
+    ],
+    "3": [
+      {
+        "label": "Home",
+        "route": "/phc/home",
+        "icon": "home",
+        "child": []
+      },
+      {
+        "label": "Entry Form",
+        "route": "/phc/entry",
+        "icon": "playlist_add",
+        "child": []
+      },
+      {
+        "label": "Reports",
+        "icon": "receipt",
+        "child": [
+          {
+            "label": "Line List",
+            "route": "/phc/line-list",
+            "icon": "receipt"
+          }
+        ]
+      }
+    ],
+    "4": [
+      {
+        "label": "Home",
+        "route": "/chc/home",
+        "icon": "home",
+        "child": [] 
+      },
+      {
+        "label": "Line List Report",
+        "route": "/chc/line-list",
+        "icon": "list",
+        "child": []
+      },
+      {
+        "label": "Refer To DH",
+        "route": "/chc/refer-to-dh-list",
+        "icon": "list",
+        "child": []
+      }
+    ],
+    "5": [
+      {
+        "label": "Home",
+        "route": "/anm/home",
+        "icon": "home",
+        "child": []
+      },
+      {
+        "label": "Entry Form",
+        "route": "/anm/entry",
+        "icon": "playlist_add",
+        "child": []
+      },
+      {
+        "label": "Reports",
+        "icon": "receipt",
+        "child": [
+          {
+            "label": "Line List",
+            "route": "/anm/line-list",
+            "icon": "receipt"
+          }
+        ]
+      }
+    ],
+    "6": [
+      {
+        "label": "Home",
+        "route": "/dh/home",
+        "icon": "home",
+        "child": []
+      }
+    ],
+    "7":[
+      {
+        "label": "Home",
+        "route": "/user/home",
+        "icon": "home",
+        "child": []
+      },
+      {
+        "label": "others",
+        "route": "/user/demo1",
+        "icon": "playlist_add",
+        "child": []
+      },
+      {
+        "label": "list",
+        "icon": "receipt",
+        "child": [
+          {
+            "label": "sub-list",
+            "route": "/user/sub-list",
+            "icon": "receipt"
+          }
+        ]
+      }
+    ]
+  }

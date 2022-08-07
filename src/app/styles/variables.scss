@@ -1,0 +1,86 @@
+@import "colors";
+
+//== Viewports
+
+$extra-small: 576px;
+$small: 576px;
+$medium: 768px;
+$normal: 1024px;
+$large: 992px;
+$extra-large: 1200px;
+
+
+//== Sidebar
+
+$sidebar-width: 210px;
+$sidebar-font-color: $gray-08;
+$sidebar-font-color-active: $sub-primary-color;//$dark-grey;
+$sidebar-background-color-active: #5c1d1021;//$blue-white;#11746621
+$sidebar-background-color-hover: #5c1d1021;//$blue-white;
+$sidebar-icon-color-active: rgb(89, 14, 147);//$blue;rgb(8 68 104)
+$sidebar-icon-color: $gray-06;
+$sidebar-title-color: $sidebar-font-color;
+$sidebar-circle-color: $light-grey;
+
+//== Material Card
+//
+
+$card-font-color: $dark-grey;
+$card-title-font-color: $grey;
+
+//== Material Toolbar
+
+$toolbar-title-font-color: $light-grey;
+$toolbar-button-font-color: $white;
+$toolbar-button-background-color: $pink;
+$toolbar-button-background-color-active: $dark-pink;
+
+//== Material Sidebar Content
+
+$sidebar-content-padding: 48px;
+
+//== Material Tabs
+
+$tabs-header-font-color: $light-grey;
+$tabs-header-font-color-active: $blue;
+$tabs-ink-bar-color: $blue;
+
+
+//== Apex Chart X axis tooltip
+
+$chart-tooltip-background-color: $blue;
+$chart-tooltip-border-color: $blue;
+$chart-tooltip-font-color: $white;
+
+//== Scroll bar
+
+$scrollbar-track-color:  rgb(89, 14, 147);// rgb(8 68 104)$light-grey;
+$scrollbar-track-piece-color: $white;
+$scrollbar-thumb-color: rgb(8 68 104);//$light-grey;
+$scrollbar-corner-color: rgb(8 68 104);//$light-grey;
+
+//== Header
+
+$header-background-color: rgb(89, 14, 147) ;//$blue
+$header-height: 70px;
+$header-button-background-color:  rgb(89, 14, 147);//rgba(0,255,222,1);
+$header-button-background-color-hover: rgb(89, 14, 147);
+$header-button-font-color: rgb(2,64,101);
+$header-title-font-color: rgba(0,255,222,1);
+
+//== Footer
+
+$footer-height: 48px;
+$footer-width: calc(100% - #{$sidebar-content-padding});
+$footer-link-color: $blue;
+$footer-icon-color: $gray-06;
+$footer-icon-background-color-hover: $black-08;
+
+//== Settings menu element
+
+$settings-button-background-color: $white;
+$settings-button-background-color-hover: $blue;
+$settings-button-color: $light-grey;
+$settings-button-color-hover: $white-35;
+$settings-menu-font-color: $dark-grey;
+$settings-menu-background-color-hover: $blue-white;

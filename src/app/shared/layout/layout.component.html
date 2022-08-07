@@ -1,0 +1,24 @@
+<app-header (isShowSidebar)="sidenav.toggle($event)" [isMenuOpened]="isShowSidebar"></app-header>
+<mat-sidenav-container class="layout">
+  <mat-sidenav
+    #sidenav
+    mode="side"
+    [(opened)]="isShowSidebar"
+    class="layout-sidebar"
+    [mode]="mobileQuery.matches ? 'over' : 'side'"
+    [fixedInViewport]="mobileQuery.matches"
+    (keydown.escape)="sidenav.close()"
+  >
+    <app-sidebar (sidenav)="sidenav.close()"></app-sidebar>
+  </mat-sidenav>
+  <mat-sidenav-content class="layout-content" (scroll)="onScroll($event)">
+    <mat-progress-bar color="warn" mode="determinate" [value]="progressValue" class="scrollbar" *ngIf="showScrollProgressBar"></mat-progress-bar>
+    <div class="container-fluid mb-4">
+      <router-outlet></router-outlet>
+      <!-- <app-footer></app-footer> -->
+    </div>
+    <button mat-fab color="warn" aria-label="Scroll To Top" [ngClass]="{'show-scroll': showScroll}" (click)="scrollToTop()" class="scroll-to-top">
+      <mat-icon>arrow_upward</mat-icon>
+    </button>
+  </mat-sidenav-content>
+</mat-sidenav-container>

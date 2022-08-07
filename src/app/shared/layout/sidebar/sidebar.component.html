@@ -1,0 +1,46 @@
+
+<div class="content">
+    <div class="card">
+      <div class="firstinfo">
+        <img src="assets/images/user-logo.png" alt="img">
+        <div class="profileinfo">
+          <h1>
+            <!-- {{emp_name | uppercase}} -->
+            emp_name
+          </h1>
+          <!-- <h3 *ngIf="role_id == 5"> (ANM) </h3>
+          <h3 *ngIf="role_id == 5"> {{ posting_place }} </h3>
+          <h3 *ngIf="role_id == 2"> (State) </h3> -->
+        </div> 
+        <!-- <app-bubbles></app-bubbles> -->
+      </div>
+    </div>
+  </div>
+  
+  <mat-list>
+    <div *ngFor="let menu of mainmenu;let i=index;">
+      <mat-list-item routerLink="{{menu.route}}" routerLinkActive="active"  *ngIf="menu.route" (click)="toggleSideBar()">
+        <mat-icon>{{menu.icon}}</mat-icon> {{menu.label}}
+      </mat-list-item>
+      <mat-expansion-panel *ngIf="!menu.route" routerLinkActive="active">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon color="primary">{{menu.icon}}</mat-icon> {{menu.label}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-list-item routerLink="{{item.route}}" *ngFor="let item of menu.child" routerLinkActive="active" (click)="toggleSideBar()">
+          <mat-icon>{{item.icon}}</mat-icon> {{item.label}}
+        </mat-list-item>
+      </mat-expansion-panel>
+    </div>
+  </mat-list>
+
+  <!-- change password in sidebar -->
+  <!-- <p class="sidebar-title">User</p>
+  <mat-list>
+    <mat-list-item (click)="openChangePasswordForm()">
+      <mat-icon>key</mat-icon> Change Password
+    </mat-list-item>
+  </mat-list> -->
+  
+  

@@ -1,0 +1,287 @@
+// * {
+//     padding: 0px;
+//     margin: 0px;
+// }
+// body {
+//     background-color: rgb(12, 19, 12);
+// }
+// header {
+//     background-color: black;
+//     color: white;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 15vh;
+//     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+// }
+// h1 {
+//     letter-spacing:1.5rem;
+//     font-family: 'system-ui';
+//     text-transform: uppercase;
+//     text-align: center;
+// }
+// main {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 75vh;
+//     width: 100%;
+//     background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Mountains-1412683.svg/1280px-Mountains-1412683.svg.png) no-repeat center center;
+//     background-size: cover;
+// }
+// .form_class {
+//     width: 500px;
+//     padding: 40px;
+//     border-radius: 8px;
+//     background-color: white;
+//     font-family: 'system-ui';
+//     box-shadow: 5px 5px 10px rgb(0,0,0,0.3);
+// }
+// .form_div {
+//    // display: flex;
+//     //justify-content: center;
+//     text-transform: uppercase;
+// }
+// .form_div > label {
+//     letter-spacing: 3px;
+//     font-size: 1rem;
+// }
+// // .info_div {
+// //     text-align: center;
+// //     margin-top: 20px;
+// // }
+// // .info_div {
+// //     letter-spacing: 1px;
+// // }
+// // .field_class {
+// //     width: 100%;
+// //     border-radius: 6px;
+// //     border-style: solid;
+// //     border-width: 1px;
+// //     padding: 5px 0px;
+// //     text-indent: 6px;
+// //     margin-top: 10px;
+// //     margin-bottom: 20px;
+// //     font-family: 'system-ui';
+// //     font-size: 0.9rem;
+// //     letter-spacing: 2px;
+// // }
+// // div{
+// //     border: 10px black;
+// // }
+// .submit_class {
+//     border-style: none;
+//     border-radius: 5px;
+//     background-color: #1534e4;
+//     padding: 8px 20px;
+//     font-family: 'system-ui';
+//     text-transform: uppercase;
+//     letter-spacing: .8px;
+//     display: block;
+//     margin: auto;
+//     margin-top: 10px;
+//     box-shadow: 2px 2px 5px rgb(0,0,0,0.2);
+//     cursor: pointer;
+//  }
+// .footer {
+//     height: 10vh;
+//     background-color: black;
+//     color: white;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     box-shadow: -5px -5px 10px rgb(0,0,0,0.3);
+
+//     &_footer_para{
+//         text-align: center;
+//         font-family: 'system-ui';
+//        // letter-spacing: 2px;  
+//     }
+
+// }
+// .footer > p {
+//     text-align: center;
+//     font-family: 'system-ui';
+//     letter-spacing: 2px;
+// }
+// .footer > p > a {
+//     text-decoration: none;
+//     color: white;
+//     font-weight: bold;
+// }
+
+// .slogin_page{
+//     height: 100%;
+//     width: 100%;
+//     display: flex;
+//     padding: auto;
+// }
+
+// .header{
+//     background-color: gray;
+//         color: white;
+//         display: flex;
+//         align-items: center;
+//         justify-content:space-between;
+//         height: 15vh;
+//         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);   
+// }
+
+
+//@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    //font-family: 'Oswald', sans-serif;
+}
+.form_wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    background: #060c21;
+   // background: linear-gradient(229deg, rgba(2,64,101,0.9780287114845938) 0%, rgba(4,47,102,1) 24%, rgba(0,255,222,1) 100%);
+}
+
+.icon{
+    font-size: 2.5rem;
+    color: white;
+}
+.form
+{
+    position: relative;
+    background: #060c21;
+    border: 1px solid #000;
+    width: 350px;
+    padding: 40px 40px 60px;
+    border-radius: 10px;
+    text-align: center;
+   // z-index: 10;
+//   box-shadow: #5d02ff;
+}
+.form::before
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+     background: linear-gradient(315deg,#e91e63,#5d02ff);
+    //background: linear-gradient(229deg, rgba(2,64,101,0.9780287114845938) 0%, rgba(4,47,102,1) 24%, rgba(0,255,222,1) 100%);
+    z-index: -1;
+    transform: skew(2deg,1deg);
+    border-radius: 10px;
+}
+.form h2
+{
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.form .input
+{
+    margin-top: 40px;
+    text-align: left;
+}
+.form .input .inputBox
+{
+    margin-top: 10px;
+}
+.form .input .inputBox label
+{
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.form .input .inputBox input
+{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+     background:linear-gradient(315deg,#e91e63,#5d02ff) ;
+     //background: linear-gradient(229deg, rgba(2,64,101,0.9780287114845938) 0%, rgba(4,47,102,1) 24%, rgba(0,255,222,1) 100%);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.form .inputBox .captchaBox
+{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    margin: 15px 0px;
+     background:linear-gradient(315deg,#e91e63,#5d02ff) ;
+   // background: linear-gradient(229deg, rgba(2,64,101,0.9780287114845938) 0%, rgba(4,47,102,1) 24%, rgba(0,255,222,1) 100%);
+    // border: 1px solid #5d02ff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.captcha
+{
+    color:linear-gradient(315deg,#e91e63,#5d02ff)!important;
+}
+
+
+.form .input .inputBox input[type="submit"]
+{
+    cursor: pointer;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+
+.form .input .inputBox input[type="submit"]:hover
+{
+    background:linear-gradient(315deg,#5d02ff,#e91e63) ;
+}
+.form .input .inputBox input[type="submit"]:active
+{
+    color: rgba(255, 255, 255, 0.521);
+    background:linear-gradient(315deg,#e91e6271,#5f02ff8c) ;
+}
+.form .input .inputBox input[type="submit"]:disabled
+{
+    cursor:text;
+    color: rgba(255, 255, 255, 0.521);
+    background:linear-gradient(315deg,#e91e6271,#5f02ff8c) ;
+}
+
+// .forgot
+// {
+//     margin-top: 10px;
+//     color: #fff;
+//     font-size: 14px;
+//     letter-spacing: 1px;
+// }
+// .forgot a
+// {
+//     color: #ff0800;
+// }
+
+
+
+
+
+
+
+
+
+

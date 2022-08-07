@@ -1,0 +1,190 @@
+@import 'src/app/styles/colors';
+@import 'src/app/styles/font';
+@import 'src/app/styles/variables';
+
+.header {
+  // background-color: $header-background-color;
+
+  background: rgb(125,58,180);
+background: -moz-linear-gradient(50deg, rgba(125,58,180,1) 11%, rgba(253,29,29,1) 20%, rgba(252,176,69,1) 100%);
+background: -webkit-linear-gradient(50deg, rgba(125,58,180,1) 11%, rgba(253,29,29,1) 20%, rgba(252,176,69,1) 100%);
+background: linear-gradient(50deg, rgba(125,58,180,1) 11%, rgba(253,29,29,1) 20%, rgba(252,176,69,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7d3ab4",endColorstr="#fcb045",GradientType=1);
+
+  // background: rgb(2,64,101);
+  // background: -moz-linear-gradient(229deg, rgb(17, 116, 102) 30%, rgba(4,47,102,1) 0%, rgba(2,64,101,0.9780287114845938) 0%);
+  // background: -webkit-linear-gradient(229deg, rgb(17, 116, 102) 30%, rgba(4,47,102,1) 0%, rgba(2,64,101,0.9780287114845938) 0%);
+  // background: linear-gradient(229deg, rgb(17, 116, 102) 30%, rgba(4,47,102,1) 0%, rgba(2,64,101,0.9780287114845938) 0%);
+  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#024065",endColorstr="#00ffde",GradientType=1);
+  // // background: -webkit-gradient(linear,left top,right top,from(#473B7B),to(#30D2BE));
+  // background: linear-gradient(to right,#473B7B,#30D2BE);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  height: $header-height;
+
+  &__title {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title-button {
+    background-color: transparent;//$white;//$header-button-background-color;
+    box-shadow: none;
+
+    &:hover {
+      background-color: transparent;//$header-button-background-color-hover;
+    }
+
+    @media (max-width: $small) {
+      margin-top: 0;
+    }
+  }
+
+  &__title-button-icon {
+    color: $white;//$header-button-font-color;
+    &:hover {
+      color: $white;//$header-title-font-color;
+    }
+  }
+
+  &__title-text {
+    color: $white;
+    margin-left: 10px;
+    font-weight: $fw-lighter;
+    text-shadow: 2px 2px $header-button-font-color;
+
+    @media (max-width: $small) {
+      display: none;
+    }
+  }
+}
+
+.header-toolbar {
+  display: flex;
+  align-items: center;
+
+  .unlock-button {
+    border-color: $green;
+    margin-right: 16px;
+    text-transform: uppercase;
+    background-color: $green;
+    color: white;
+
+    letter-spacing: .0892857143em;
+    @media (max-width: $small) {
+      display: none;
+    }
+  }
+  &:hover {
+    // background-color: $white;//$header-button-background-color;
+    color: $header-button-font-color;
+  }
+}
+
+.user-button {
+  background-color: $header-button-background-color-hover;
+  box-shadow: none;
+  margin-left: 16px;
+
+  &__icon {
+    color: $white;//$header-title-font-color;
+    &:hover {
+      color: $header-button-font-color;
+    }
+  }
+
+  &:hover {
+    background-color: $white;//$header-button-background-color;
+    color: $header-button-font-color;
+  }
+
+  @media (max-width: $small) {
+    margin-top: 0;
+  }
+}
+
+.user-menu-title {
+  padding: 16px 48px 0 16px;
+  margin-bottom: 4px;
+
+  &__name {
+    margin-bottom: 4px;
+    font-weight: $fw-lighter;
+    font-size: $fs-large;
+    color: $dark-grey;
+  }
+
+  &__link {
+    color: $blue;
+    font-weight: $fw-lighter;
+    font-size: $fs-small;
+    text-decoration: none;
+  }
+}
+
+.user-menu-icon {
+  color: $light-grey;
+  margin-right: 16px;
+  opacity: .8;
+}
+
+.sign-button-wrapper {
+  text-align: center;
+  padding: 8px 0 16px 0;
+  width: 100%;
+}
+
+.sign-button {
+  border: 1px solid;
+  color: $primary-color;
+  width: 80%;
+}
+
+.user-menu {
+  &__item-title {
+    color: $light-grey;
+
+    &:hover {
+      color: $primary-color;//$dark-grey;
+      background-color: $sidebar-background-color-hover;//$blue-white;
+
+      & .user-menu-icon {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.header-cg-logo{
+  @media (max-width: $medium) {
+    display: none;
+  }
+
+  @media (max-width: $large) {
+    display: none;
+  }
+}
+
+.header-title-cg{
+  @media (min-width: $extra-large){
+    & .header-title-text h5{
+      font-size: 100%;
+    }
+  }
+
+  @media (min-width: $medium) and (max-width: $large){
+    & .header-title-text h5{
+      font-size: 80%;
+    }
+  }
+
+  @media (max-width: $medium) {
+    display: none;
+  }
+
+  @media (max-width: $large) {
+    display: none;
+  }
+}
